@@ -1,0 +1,162 @@
+[
+  {
+    "id": 101,
+    "name": "UltraBook Pro 15",
+    "description": "A lightweight laptop with powerful performance for professionals on the go.",
+    "price": 1299.99,
+    "image": "https://picsum.photos/seed/laptop1/400/300",
+    "categoryId": 1,
+    "inStock": true,
+    "rating": { "average": 4.6, "count": 87 }
+  },
+  {
+    "id": 102,
+    "name": "GameMaster X17",
+    "description": "High-end gaming laptop with advanced cooling and RGB keyboard.",
+    "price": 1899.49,
+    "image": "https://picsum.photos/seed/laptop2/400/300",
+    "categoryId": 1,
+    "inStock": true,
+    "rating": { "average": 4.8, "count": 142 }
+  },
+  {
+    "id": 103,
+    "name": "EcoBook Air",
+    "description": "Eco-friendly laptop made from recycled materials, perfect for students.",
+    "price": 799.00,
+    "image": "https://picsum.photos/seed/laptop3/400/300",
+    "categoryId": 1,
+    "inStock": false,
+    "rating": { "average": 4.2, "count": 34 }
+  },
+  {
+    "id": 104,
+    "name": "Creator Studio 14",
+    "description": "A laptop designed for creators with a stunning 4K display.",
+    "price": 1599.99,
+    "image": "https://picsum.photos/seed/laptop4/400/300",
+    "categoryId": 1,
+    "inStock": true,
+    "rating": { "average": 4.7, "count": 65 }
+  },
+  {
+    "id": 201,
+    "name": "PixelOne S",
+    "description": "A sleek smartphone with a brilliant display and long battery life.",
+    "price": 699.99,
+    "image": "https://picsum.photos/seed/phone1/400/300",
+    "categoryId": 2,
+    "inStock": true,
+    "rating": { "average": 4.5, "count": 210 }
+  },
+  {
+    "id": 202,
+    "name": "MegaPhone Ultra",
+    "description": "Flagship smartphone with pro-grade camera and fast charging.",
+    "price": 999.99,
+    "image": "https://picsum.photos/seed/phone2/400/300",
+    "categoryId": 2,
+    "inStock": false,
+    "rating": { "average": 4.9, "count": 98 }
+  },
+  {
+    "id": 203,
+    "name": "BudgetGo 5G",
+    "description": "Affordable 5G smartphone with all-day battery and modern design.",
+    "price": 349.99,
+    "image": "https://picsum.photos/seed/phone3/400/300",
+    "categoryId": 2,
+    "inStock": true,
+    "rating": { "average": 4.1, "count": 56 }
+  },
+  {
+    "id": 204,
+    "name": "MiniPhone Lite",
+    "description": "Compact smartphone for easy one-handed use and portability.",
+    "price": 299.99,
+    "image": "https://picsum.photos/seed/phone4/400/300",
+    "categoryId": 2,
+    "inStock": true,
+    "rating": { "average": 3.9, "count": 22 }
+  },
+  {
+    "id": 301,
+    "name": "NoiseBlocker 700",
+    "description": "Wireless headphones with active noise cancellation and deep bass.",
+    "price": 199.99,
+    "image": "https://picsum.photos/seed/headphones1/400/300",
+    "categoryId": 3,
+    "inStock": true,
+    "rating": { "average": 4.4, "count": 77 }
+  },
+  {
+    "id": 302,
+    "name": "StudioSound Pro",
+    "description": "Over-ear headphones for studio-quality sound and comfort.",
+    "price": 249.99,
+    "image": "https://picsum.photos/seed/headphones2/400/300",
+    "categoryId": 3,
+    "inStock": false,
+    "rating": { "average": 4.7, "count": 41 }
+  },
+  {
+    "id": 303,
+    "name": "SportBuds X",
+    "description": "Sweat-resistant wireless earbuds for active lifestyles.",
+    "price": 89.99,
+    "image": "https://picsum.photos/seed/headphones3/400/300",
+    "categoryId": 3,
+    "inStock": true,
+    "rating": { "average": 4.3, "count": 63 }
+  },
+  {
+    "id": 304,
+    "name": "TravelTunes Mini",
+    "description": "Compact on-ear headphones with foldable design for travel.",
+    "price": 59.99,
+    "image": "https://picsum.photos/seed/headphones4/400/300",
+    "categoryId": 3,
+    "inStock": true,
+    "rating": { "average": 4.0, "count": 19 }
+  },
+  {
+    "id": 401,
+    "name": "FitBand 3",
+    "description": "Fitness tracker with heart rate monitor and sleep tracking.",
+    "price": 49.99,
+    "image": "https://picsum.photos/seed/wearable1/400/300",
+    "categoryId": 4,
+    "inStock": true,
+    "rating": { "average": 4.2, "count": 88 }
+  },
+  {
+    "id": 402,
+    "name": "SmartWatch Active",
+    "description": "Smartwatch with GPS, music storage, and customizable faces.",
+    "price": 179.99,
+    "image": "https://picsum.photos/seed/wearable2/400/300",
+    "categoryId": 4,
+    "inStock": true,
+    "rating": { "average": 4.6, "count": 54 }
+  },
+  {
+    "id": 403,
+    "name": "HealthRing",
+    "description": "Wearable smart ring for health and activity tracking.",
+    "price": 129.99,
+    "image": "https://picsum.photos/seed/wearable3/400/300",
+    "categoryId": 4,
+    "inStock": false,
+    "rating": { "average": 4.1, "count": 17 }
+  },
+  {
+    "id": 404,
+    "name": "Kids Tracker Watch",
+    "description": "Colorful smartwatch for kids with GPS and parental controls.",
+    "price": 59.99,
+    "image": "https://picsum.photos/seed/wearable4/400/300",
+    "categoryId": 4,
+    "inStock": true,
+    "rating": { "average": 4.3, "count": 29 }
+  }
+]
