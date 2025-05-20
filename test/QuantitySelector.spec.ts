@@ -1,17 +1,24 @@
-import { render } from '@testing-library/vue'
+import { render, fireEvent } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
 import QuantitySelector from '../components/QuantitySelector.vue'
 
 describe('QuantitySelector.vue', () => {
   it('renders quantity selector container', () => {
-    const { container } = render(QuantitySelector)
-    expect(container.querySelector('div')).toBeInTheDocument()
+    const { container } = render(QuantitySelector, { props: { modelValue: 1 } })
+    expect(container.querySelector('div')).not.toBeNull()
   })
 
-  it('renders slot content if provided', () => {
-    const { getByText } = render(QuantitySelector, {
-      slots: { default: '<span>Qty</span>' },
+  it('increments and decrements quantity', async () => {
+    let value = 2
+    const { getByLabelText, emitted } = render(QuantitySelector, {
+      props: { modelValue: value },
+      attrs: {
+        'onUpdate:modelValue': (v: number) => (value = v),
+      },
     })
-    expect(getByText('Qty')).toBeInTheDocument()
+    await fireEvent.click(getByLabelText('Increase quantity'))
+    expect(emitted()['update:modelValue']).toBeTruthy()
+    await fireEvent.click(getByLabelText('Decrease quantity'))
+    expect(emitted()['update:modelValue']).toBeTruthy()
   })
 })

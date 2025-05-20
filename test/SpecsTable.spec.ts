@@ -4,15 +4,13 @@ import SpecsTable from '../components/SpecsTable.vue'
 
 describe('SpecsTable.vue', () => {
   it('renders specs table', () => {
-    const { container } = render(SpecsTable)
-    expect(container.querySelector('table')).toBeInTheDocument()
-  })
-
-  it('renders slot content if provided', () => {
-    const { getByText } = render(SpecsTable, {
-      slots: { default: '<tr><td>Spec</td><td>Value</td></tr>' },
+    const { container } = render(SpecsTable, {
+      props: { specs: { CPU: 'i7', RAM: '16GB' } },
     })
-    expect(getByText('Spec')).toBeInTheDocument()
-    expect(getByText('Value')).toBeInTheDocument()
+    expect(container.querySelector('table')).not.toBeNull()
+    expect(container.textContent).toContain('CPU')
+    expect(container.textContent).toContain('i7')
+    expect(container.textContent).toContain('RAM')
+    expect(container.textContent).toContain('16GB')
   })
 })
