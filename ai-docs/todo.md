@@ -85,6 +85,20 @@ This checklist references all relevant documentation in `./ai-docs/*` and covers
 - [ ] Add error handling for missing/corrupt product data and empty results
 - [ ] Implement 404 or fallback UI for invalid product routes
 
+### 14. Accessibility Pre-Launch Checklist
+- [ ] Ensure all buttons use <button> elements and have descriptive text or aria-labels
+- [ ] All form fields have associated <label> elements (visually hidden if needed)
+- [ ] Modals and drawers trap focus, use role="dialog" and aria-modal="true", and restore focus on close
+- [ ] All interactive elements are keyboard accessible and have visible focus indicators
+- [ ] Provide a "Skip to main content" link for keyboard users
+- [ ] Test navigation and content with screen readers (NVDA, VoiceOver, ChromeVox)
+- [ ] Validate color contrast (4.5:1 for normal text, 3:1 for large text) using tools like axe or Lighthouse
+- [ ] Do not rely on color alone to convey information (e.g., error states)
+- [ ] Use ARIA roles/attributes to enhance, not replace, native semantics
+- [ ] Avoid using role="button" on non-button elements; prefer native elements
+- [ ] Use aria-live for dynamic updates (e.g., cart changes) if needed
+- [ ] Avoid aria-hidden on visible, interactive elements
+
 ---
 
 Check off each item as you complete it to ensure a thorough, best-practices implementation of the Nuxt 3 + Tailwind CSS v3 E-Commerce Frontend PoC.
