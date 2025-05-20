@@ -73,6 +73,18 @@ This checklist references all relevant documentation in `./ai-docs/*` and covers
 - [ ] Ensure error states are handled gracefully
 - [ ] Validate UI/UX consistency with design_guidelines.md
 
+### 11. Code Quality & Refactoring
+- [ ] Move shared utilities (e.g., price formatting) to a composable or utils file
+- [ ] Refactor components to emit events for actions (e.g., product card click)
+- [ ] Add comments and documentation to complex logic and components
+
+### 12. Scalability & State
+- [ ] Scaffold and implement cart state management (Pinia or Nuxt composables)
+
+### 13. Error Handling & UX
+- [ ] Add error handling for missing/corrupt product data and empty results
+- [ ] Implement 404 or fallback UI for invalid product routes
+
 ---
 
 Check off each item as you complete it to ensure a thorough, best-practices implementation of the Nuxt 3 + Tailwind CSS v3 E-Commerce Frontend PoC.
